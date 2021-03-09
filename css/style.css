@@ -1,0 +1,105 @@
+/* Type selectors */
+
+body {
+ margin: 0;
+}
+
+header {
+  position: relative;
+  text-align: center;
+  font-family: aerial, sans-serif;
+  color: #1a0033;
+}
+
+   /* Added to allow transparency of the background image. Requires 'position: absolute'. All other items require 'position: relative'. */
+
+header:before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/eldritch-horror.jpg");
+  background-size: cover;
+  opacity: 0.65;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  }
+
+h1 {
+  position: relative;
+  margin: 0rem;
+  padding-top: 3rem;
+  font-size: 5rem;
+  text-shadow: 0.25rem 0.25rem 0.5rem #ff751a;  
+}
+
+
+/* Class selectors */
+
+.subtitle {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+.banner {
+  position: relative;
+  margin: 0;
+  width: 100%;
+  padding: 0.4rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(27, 5, 87);
+  background-size: 100%;
+  border-top: 0.1rem solid #e6b800;
+}
+
+.banner-item {
+  display: block; 
+  margin: auto;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.link:link {
+  color: #ff751a
+}
+
+.link:visited {
+  color: #cc2900;
+}
+
+
+/* ID selectors */
+
+#game {
+  position: relative;  
+  margin-top: 2rem;
+  margin-bottom: 2rem;  
+  width: 16rem;
+  transition-duration: 0.3s;
+}
+
+#game:hover {
+  transform: scale(1.5);  
+}
+
+#button {
+  padding: 0.3em 2rem 0.2rem;
+  outline: 0;
+  background-color: #ff751a;
+  border-radius: 0.4rem; 
+  border-color: #e6b800;  
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #000080;
+  font-weight: bold;
+  text-decoration: none; 
+  transition-duration: 0.2s;
+}
+
+#button:hover {
+  background-color: #e65c00;  
+  cursor: pointer; 
+}
